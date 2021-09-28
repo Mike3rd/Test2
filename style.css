@@ -9,7 +9,57 @@
  Version:        1.0.0
 */
 
-@import url("./../Divi/style.css");
+
+/* tko logo in header text */
+.textlogo {font-size:30px; color:#000000;font-family:'Aldrich',courier,'sans-serif';text-decoration:none}
+.textlogo:hover{opacity:.5}
+.logo_container{padding-top:9px;}
+
+/* tko tag in header - links to headingphp file in childtheme folder*/
+
+#tkotagline{font-weight:normal; color:#dddddd;font-size:16px!important;line-height:120%;font-family:Helvetica, Arial, 'sans-serif';}
+#et-info {text-align:center; width:100%;}
+#et-info a {}
+#top-header{background-color:#000000!important;padding:0px;}
+
+/* tko verticle portfolio navigation*/
+.vertical-menu {width: 100%;}
+.vertical-menu a {background-color: #eee;color: black;display: block;padding: 12px;text-decoration: none;}
+.vertical-menu a:hover {background-color: #ccc;}
+.vertical-menu a.active {background-color: #4CAF50; color:#ffffff; font-size:22px; line-height:110%; font-family:sans-serif}
+.vertical-menu a.active:hover {background-color: #cccccc; color:#ffffff;}
+
+
+
+
+
+/*Resume Style*/
+.position{color:#000000; font-size:16px; line-height:110%; font-family:sans-serif; font-weight:bold}
+.subposition{color:#000000; font-size:14px}
+.company{font-size:14px; line-height:110%; font-style:italic; color:#000000}
+
+
+
+
+
+
+
+
+/* TKO H's */
+/* h main page section titles*/
+.et_pb_text_inner h1{color:#000000; font-size:22px; line-height:110%; font-family:sans-serif}
+.et_pb_text_inner h2{color:#000000; font-size:16px; line-height:110%; font-family:sans-serif}
+
+/* blog article title- choose h3 on divi control*/
+.et_pb_post h3 {color:#005daa; line-height:110%}
+/* blog article emphasize- choose h5 on divi control*/
+.et_pb_post h5 {line-height:110%; font-style:italic}
+/* blog article right rail emphasize- choose h5 on divi control*/
+.et_pb_text_inner h5 {line-height:110%; font-style:italic}
+
+
+
+
 
 /*ACCORDIAN*/
 .et_pb_toggle_open .et_pb_toggle_title:before {
@@ -42,25 +92,12 @@ h4.widgettitle {font-size:22px;line-height:110%; font-family:sans-serif}
 /* POST Heading Area */
 .et_post_meta_wrapper h1{background-color:#ffffff; padding:15px; text-align:center; line-height:125%;color:#20346f; border-bottom:1px solid #B7B7B7; font-family:  Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Arial, "sans-serif"}
 
-/* tko tag in header - links to headingphp file in childtheme folder*/
-
-#tkotagline{font-weight:normal; color:#ffffff;font-size:16px!important;line-height:120%;font-family:Helvetica, Arial, 'sans-serif';}
-#et-info {text-align:center; width:100%;}
-#et-info a {}
-#top-header{background-color:#000000!important;padding:0px;}
-
-/* tko logo in header text */
-.textlogo {font-size:30px; color:#000000;font-family:'Aldrich',courier,'sans-serif';}
-.textlogo:hover{opacity:.5}
-.logo_container{padding-top:9px;}
 
 
-/* tko verticle portfolio navigation*/
-.vertical-menu {width: 100%;}
-.vertical-menu a {background-color: #eee;color: black;display: block;padding: 12px;text-decoration: none;}
-.vertical-menu a:hover {background-color: #ccc;}
-.vertical-menu a.active {background-color: #4CAF50; color:#ffffff; font-size:22px; line-height:110%; font-family:sans-serif}
-.vertical-menu a.active:hover {background-color: #cccccc; color:#ffffff;}
+
+
+
+
 
 /*Category Area right rail*/
 .widget_categories  li{}
