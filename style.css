@@ -3,8 +3,10 @@
 
 
 /* tko logo in header text */
-.textlogo {font-size:30px; color:#000000;font-family:'Aldrich',courier,'sans-serif';text-decoration:none!important}
-.textlogo:hover{opacity:.5}
+.textlogo {font-size:30px; color:#000000;font-family:'Aldrich',courier,'sans-serif';}
+.textlogo:hover{opacity:.5;}
+a {text-decoration:none}
+
 .logo_container{padding-top:9px;text-decoration:none}
 
 /* tko tag in header - links to headingphp file in childtheme folder*/
