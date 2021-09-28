@@ -11,7 +11,7 @@
 
 
 /* tko logo in header text */
-.textlogo {font-size:30px; color:#000000;font-family:'Aldrich',courier,'sans-serif';text-decoration:none}
+.textlogo {font-size:30px; color:#000000;font-family:'Aldrich',courier,'sans-serif';text-decoration:none!important}
 .textlogo:hover{opacity:.5}
 .logo_container{padding-top:9px;text-decoration:none}
 
