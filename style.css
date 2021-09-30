@@ -4,13 +4,13 @@
 /*global*/
 a:link {text-decoration:none}
 /* tko logo in header text */
-.textlogo {font-size:30px; color:#000000;font-family:'Aldrich',courier,'sans-serif';}
+.textlogo {font-size:50px; color:#000000;font-family:'Aldrich',courier,'sans-serif';}
 .textlogo:hover{opacity:.5;}
 .logo_container{padding-top:9px;text-decoration:none}
 
 /* tko tag in header - links to headingphp file in childtheme folder*/
 
-#tkotagline{font-weight:normal; color:#dddddd;font-size:16px!important;line-height:120%;font-family:Helvetica, Arial, 'sans-serif';}
+#tkotagline{font-weight:normal; color:#dddddd;font-size:16px;line-height:120%;font-family:Helvetica, Arial, 'sans-serif';}
 #et-info {text-align:center; width:100%;}
 #et-info a {}
 #top-header{background-color:#000000!important;padding:0px;}
