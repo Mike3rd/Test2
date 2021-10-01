@@ -22,18 +22,10 @@ a:link {text-decoration:none}
 .vertical-menu a.active {background-color: #4CAF50; color:#ffffff; font-size:22px; line-height:110%; font-family:sans-serif}
 .vertical-menu a.active:hover {background-color: #cccccc; color:#ffffff;}
 
-
-
-
-
 /*Resume Style*/
 .position{color:#000000; font-size:16px; line-height:110%; font-family:sans-serif; font-weight:bold}
-.subposition{color:#000000; font-size:14px}
+.subposition{color:#000000; font-size:14px;font-weight:bold}
 .company{font-size:14px; line-height:110%; font-style:italic; color:#000000}
-
-
-
-
 
 
 
