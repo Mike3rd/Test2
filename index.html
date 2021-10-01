@@ -79,17 +79,9 @@ function w3_close() {
   <script>w3.includeHTML();</script>
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
-
 <!-- Header -->
-<div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
-<div class="w3-clear"></div>
-<header class="w3-center w3-margin-bottom">
-  <p><a href="/"> <span class="textlogo">Mike Turko</span></a><br>
-  <b>Graphic Designer</b></p>
-  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
-</header>
-</div>
+  <div w3-include-html="sidebar.html"></div>
+  <script>w3.includeHTML();</script>
 <!--Toggle Grid-->
 <div class="w3-opacity">
 <header class="w3-center w3-margin-bottom">
