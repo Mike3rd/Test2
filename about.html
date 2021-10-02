@@ -1,4 +1,5 @@
 
+
 <!-- !W3 include HTML! -->
 <script>
 function includeHTML() {
@@ -32,11 +33,14 @@ function includeHTML() {
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <!-- !W3 include HTML End! -->
 
-<!-- TOP -->
-  <div w3-include-html="top.html"></div>
-  <script>w3.includeHTML();</script>
+
+<!-- !End Header! -->
+<link rel="stylesheet" id="divi-style-css" href="style.css" type="text/css" media="all">
 <!-- !BODY START! -->
 <body>
+<!-- Sidebar -->
+  <div w3-include-html="top.html"></div>
+  <script>w3.includeHTML();</script>
 <!-- Sidebar -->
   <div w3-include-html="sidebar.html"></div>
   <script>w3.includeHTML();</script>
