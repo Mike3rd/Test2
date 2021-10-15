@@ -4,7 +4,7 @@
   </a>
   <div class="w3-bar-block w3-center">
     <a href="/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="about.php" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>

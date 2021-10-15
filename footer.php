@@ -7,4 +7,3 @@
   <i class="w3-hover-opacity"><img src="/images/2021/discord.png"></i>
  <i class="fa-brands fa-discord w3-hover-opacity"></i>
   <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
- 
