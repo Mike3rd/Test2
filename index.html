@@ -6,21 +6,24 @@
 <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <link rel="stylesheet" href="css/w3.css"><!--check for updates or use link above-->
 <link rel="stylesheet" id="divi-style-css" href="css/style.css" type="text/css" media="all">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
+<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b3031d7976.js" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
 <link rel="icon" href="./images/2021/mtfavicon3_100x100.ico" sizes="32x32">
 <link rel="icon" href="./images/2021/mtfavicon3_100x100.ico" sizes="192x192">
 <link rel="apple-touch-icon" href="./images/2021/mtfavicon3_100x100.ico">
 <meta name="msapplication-TileImage" content="./images/2021/mtfavicon3_100x100.ico">
+
 <!-- Google recaptcha3 Miketurko.com -->
 <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LfKvZoUAAAAANA3h3l9fbdsEXNaKUilnkiOWNvk&#038;ver=3.0" id="google-recaptcha-js"></script>
-
-<!-- Google recaptcha3 mturko.com
-<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6Le6rMocAAAAAFArZJiGw2OtMRUQl3X_3pcgz__j&#038;ver=3.0" id="google-recaptcha-js"></script>
--->
-
+<!-- Google recaptcha2 form mturko.com-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65757808-1"></script>
 <script>
@@ -32,11 +35,19 @@
 </script>
 
 <!-- End Google Tag Manager -->	
-<style>
-body,h1 {font-family: "Montserrat", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-</style>
+
+<script>
+<!--Script to open and close sidebar-->
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 <!-- !W3 include HTML! -->
 <script>
 function includeHTML() {
@@ -68,95 +79,33 @@ function includeHTML() {
 };
 </script>
 <script src="https://www.w3schools.com/lib/w3.js"></script>
-
 <!-- !W3 include HTML End! -->
 
-<!-- Page Content -->
+<!-- Body -->
 <body class="w3-light-grey w3-content" style="max-width:1600px">
-
-<!-- SIDEBAR/NAV INCLUDE -->
+<!-- Nav -->
   <div w3-include-html="sidebar.html"></div>
   <script>w3.includeHTML();</script>
-  <!-- ENDSIDEBAR/NAV INCLUDE -->
 
-<!-- !PAGE CONTENT! -->
+<!-- Content  -->
 <div class="w3-main" style="margin-left:300px">
+<div class="w3-container w3-hide-medium w3-hide-small" style="width:1600px; height:150px; background-color:#fff"></div>
+<!-- Top Nav Mobile -->
+  <div w3-include-html="topnavmobile.html"></div>
+  <script>w3.includeHTML();</script>
+<!-- Portfolio -->
+  <div w3-include-html="portfolio.html"></div>
+  <script>w3.includeHTML();</script>
+      <!-- about -->
+  <div w3-include-html="about.html"></div>
+  <script>w3.includeHTML();</script>
+<!-- Contact -->
+  <div w3-include-html="contact.html"></div>
+  <script>w3.includeHTML();</script>
 
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-	
-    <div class="w3-container" style="margin-bottom:55px">
-    <h1><b>My Portfolio</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16" id="myBtnContainer" >
-      <button class="w3-button w3-black btn active" onclick="filterSelection('all')">ALL</button>
-      <button class="w3-button w3-white btn" onclick="filterSelection('design')"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
-      <button class="w3-button w3-white btn <!--w3-hide-small-->" onclick="filterSelection('photos')"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
-      <button class="w3-button w3-white btn <!--w3-hide-small-->" onclick="filterSelection('art')"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
-    </div>
-    </div>
-  </header>
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom filterDiv design">
-	   <img src="/images/2021/print_ciox.jpg" class="w3-hover-opacity alt="Norway" style="width:100%;cursor:zoom-in"
-  onclick="document.getElementById('modal01').style.display='block'">
 
-  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="/images/2021/print_ciox.jpg" style="width:100%">
-	  
-    </div>
-  </div>
-        <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-</div>
-	
-    <div class="w3-third w3-container w3-margin-bottom filterDiv design">
-      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container filterDiv design">
-      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom filterDiv art">
-      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom filterDiv photos">
-      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container filterDiv art">
-      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
-  <script>
+
+<script>
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -201,20 +150,9 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-
-<!-- End Page Content -->
+<!-- End Content Div -->
 </div>
+<!-- End Content Div -->
 
 <!-- Footer -->
   <div w3-include-html="footer.html"></div>

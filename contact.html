@@ -1,40 +1,54 @@
-<div class="fcf-body">
-
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
-
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-        </div>
-
-        <div class="fcf-credit" id="fcf-credit">
-        Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
-        </div>
-
-    </form>
+  <!-- Contact Section -->
+      <?php
+    if (isset($_POST['name'])) { 
+      require "3-process.php"; 
+      echo $error=="" 
+        ? "<div id='notify'>OK</div>"
+        : "<div id='notify'>$error</div>";
+ }
+    ?>
+	
+	<!-- Contact Mobile Anchor-->
+<div id="contact-mobile" class="w3-container w3-hide-large about-mobile"></div>
+<!-- end Contact Mobile Anchor-->
+	<header id="contact" style="margin-bottom:16px">
+    <div class="w3-container">
+    <h4 class="w3-bottombar"><b>Contact</b></h4>
+	</div>
+  </header>
+  <div class="w3-container w3-padding-large w3-grey w3-margin-left w3-margin-right">
+    <div class="w3-row-padding w3-center w3-padding-large" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Chicago, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
     </div>
-
-</div>
+    <hr class="w3-opacity">
+     <form id="cform" method="post">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="name" required/>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="email" required/>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="textarea" name="message" required></textarea>
+      </div>
+	        <!-- (D) CAPTCHA - CHANGE SITE KEY! -->
+	<div class="w3-section">
+      <div class="g-recaptcha" data-sitekey="6LeMxuwcAAAAAGf87HDM8TjmVDWziqGf4lZnBKgw"></div>
+	  </div>
+<button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>

@@ -1,107 +1,14 @@
-<!DOCTYPE html>
-<html>
-<title>Mike Turko | Graphic Designer</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-<link rel="stylesheet" href="css/w3.css"><!--check for updates or use link above-->
-<link rel="stylesheet" id="divi-style-css" href="css/style.css" type="text/css" media="all">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
-<link rel="icon" href="./images/2021/mtfavicon3_100x100.ico" sizes="32x32">
-<link rel="icon" href="./images/2021/mtfavicon3_100x100.ico" sizes="192x192">
-<link rel="apple-touch-icon" href="./images/2021/mtfavicon3_100x100.ico">
-<meta name="msapplication-TileImage" content="./images/2021/mtfavicon3_100x100.ico">
-<!-- Google recaptcha3 -->
-<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LfKvZoUAAAAANA3h3l9fbdsEXNaKUilnkiOWNvk&#038;ver=3.0" id="google-recaptcha-js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65757808-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-65757808-1');
-</script>
-
-<!--END Google sit tag-->
-</script>
-<style>
-body,h1 {font-family: "Montserrat", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-</style>
-
-<!-- !W3 include HTML! -->
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
-</script>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-<!-- !W3 include HTML End! -->
-
-<script>
-// Toggle grid padding
-function myFunction() {
-  var x = document.getElementById("myGrid");
-  if (x.className === "w3-row") {
-    x.className = "w3-row-padding";
-  } else { 
-    x.className = x.className.replace("w3-row-padding", "w3-row");
-  }
-}
-
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-<!-- !End Header! -->
-<!-- !BODY START! -->
-<body>
-<!-- Sidebar -->
-  <div w3-include-html="sidebar.html"></div>
-  <script>w3.includeHTML();</script>
-
-<!-- !header! -->
-  <div w3-include-html="header.html"></div>
-  <script>w3.includeHTML();</script>
-  
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:900px;padding:20px">
+<!-- About Me Mobile Anchor-->
+<div id="about-mobile" class="w3-container w3-hide-large about-mobile"></div>
+<!-- end About Me Mobile Anchor-->
+<header id="about">
+    <div class="w3-container">
+    <h4 class="w3-bottombar"><b>About</b></h4>
+	</div>
+  </header>
+<div class="w3-container w3-padding-large" style="margin-bottom:32px">
  <div class="et_pb_text_inner">
-    <h1>SUMMARY</h1>
+    <h2>SUMMARY</h2>
     <p>Detailed, well-organized and resourceful Graphic Designer offering extensive experience and proven expertise in online design / development and print design / production. Exceptional multitasking skills; able to manage several time sensitive projects simultaneously; ability to work well independently as well as collaboratively; accustomed to performing in a fast, deadline driven environment with emphasis on efficiency, creativity and quality control. Learns new technology quickly; committed to continuous learning in all areas of technology and design.</p>
   </div>
 <!--design experience Technical skills floating divs-->
@@ -120,7 +27,7 @@ function w3_close() {
   </div>
   <!--END design experience Technical skills floating divs-->
   <div class="et_pb_text_inner">
-    <h1>WORK EXPERIENCE</h1>
+    <h2>WORK EXPERIENCE</h2>
   </div>
   <div class="et_pb_text_inner">
     <p><span class="position">Graphic Design Specialist</span><br>
@@ -169,12 +76,3 @@ function w3_close() {
   </div>
 </div>
 <!--End Page Content-->
-
-<!-- Footer -->
-  <div w3-include-html="footer.html"></div>
-  <script>w3.includeHTML();</script>
- 
-
-
-</body>
-</html>
