@@ -93,8 +93,79 @@ function includeHTML() {
   <div w3-include-html="topnavmobile.html"></div>
   <script>w3.includeHTML();</script>
 <!-- Portfolio -->
-  <div w3-include-html="portfolio.html"></div>
-  <script>w3.includeHTML();</script>
+  <!-- Port Header -->
+  <header id="portfolio" class="portfolio-tko">
+    <div class="w3-container" style="margin-bottom:16px">
+    <h4 class="w3-bottombar"><b>Portfolio</b></h4>
+    <div class="w3-section  w3-padding-16" id="myBtnContainer" >
+      <button class="w3-button w3-black btn active" onclick="filterSelection('all')">ALL</button>
+      <button class="w3-button w3-white btn" onclick="filterSelection('design')"><i class="fas fa-book-dead w3-margin-right"></i>Print</button>
+      <button class="w3-button w3-white btn" onclick="filterSelection('photos')"><i class="fas fa-photo-video w3-margin-right"></i>Video</button>
+      <button class="w3-button w3-white btn" onclick="filterSelection('art')"><i class="fas fa-laptop-code w3-margin-right"></i>Digital</button>
+	  <button class="w3-button w3-white btn" onclick="filterSelection('other')"><i class="fas fa-laptop-code w3-margin-right"></i>Other</button>
+    </div>
+    </div>
+  </header>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv design">
+	   <img src="/images/2021/print_ciox.jpg" class="w3-hover-opacity alt="Norway" style="width:100%;cursor:zoom-in"
+  onclick="document.getElementById('modal01').style.display='block'">
+
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2021/print_ciox.jpg" style="width:100%">
+	  
+    </div>
+  </div>
+        <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+</div>
+	
+    <div class="w3-third w3-container w3-margin-bottom filterDiv design">
+      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container filterDiv design">
+      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv other">
+      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom filterDiv photos">
+      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container filterDiv art">
+      <img src="/images/2021/print_ciox.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>	
+  </div>
+  <!-- Portfolio Script-->
     <script>
 filterSelection("all")
 function filterSelection(c) {
