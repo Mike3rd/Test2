@@ -3,6 +3,7 @@
 
 /*global*/
 a:link {text-decoration:none}
+.pointer-link {cursor: pointer;}
 /* tko logo in header text */
 .textlogo {font-size:35px; color:#000000;font-family:'Aldrich',courier,'sans-serif';}
 .textlogo:hover{opacity:.5;}
