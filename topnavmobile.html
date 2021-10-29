@@ -1,4 +1,4 @@
-  <div class="w3-top">
+  <div id="navbarmobile" class="w3-top">
   <div id="topmobile" class="w3-hide-large" style="background-color:#fff">
     <div class="textlogo w3-center w3-hover-opacity"><a href="/">Mike Turko</a></div>
     <!--<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span> -->
@@ -9,3 +9,16 @@
   </div>
   </div>
   </div>
+  
+    <script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbarmobile").style.top = "0";
+  } else {
+    document.getElementById("navbarmobile").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
