@@ -1,13 +1,4 @@
   <!-- Contact Section -->
-      <?php
-    if (isset($_POST['name'])) { 
-      require "3-process.php"; 
-      echo $error=="" 
-        ? "<div id='notify'>OK</div>"
-        : "<div id='notify'>$error</div>";
- }
-    ?>
-	
 	<!-- Contact Mobile Anchor-->
 <div id="contact-mobile" class="w3-container w3-hide-large about-mobile"></div>
 <!-- end Contact Mobile Anchor-->
@@ -18,37 +9,24 @@
   </header>
   <div class="w3-container w3-padding-large w3-grey w3-margin-left w3-margin-right">
     <div class="w3-row-padding w3-center w3-padding-large" style="margin:0 -16px">
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>email@email.com</p>
+
+      <div class="w3-third w3-dark-gray">
+	  		 <p><a href="https://www.linkedin.com/in/mike3rd/" target="-blank"><i class="fab fa-linkedin w3-hover-opacity w3-xxlarge w3-text-light-grey"></i></a></p>
       </div>
-      <div class="w3-third w3-teal">
-        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Chicago, US</p>
+	        <div class="w3-third w3-teal">
+        <p><span onclick="document.getElementById('id02').style.display='block'"
+class=""><i class="fa fa-envelope w3-xxlarge w3-text-light-grey w3-hover-opacity"></i></span></p>
       </div>
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-        <p>512312311</p>
+	    <div id="id02" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p><b>mturko</b>[at symbol]<b>outlook</b>[period]<b>com</b></p>
       </div>
     </div>
-    <hr class="w3-opacity">
-     <form id="cform" method="post">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="name" required/>
+  </div>
+      <div class="w3-third w3-dark-grey">
+		  <p><a href="https://t.me/mike3rd" target="-blank"><i class="fab fa-telegram w3-xxlarge w3-hover-opacity w3-text-light-grey"></i></a></p>
       </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="email" required/>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="textarea" name="message" required></textarea>
-      </div>
-	        <!-- (D) CAPTCHA - CHANGE SITE KEY! -->
-	<div class="w3-section">
-      <div class="g-recaptcha" data-sitekey="6LeMxuwcAAAAAGf87HDM8TjmVDWziqGf4lZnBKgw"></div>
-	  </div>
-<button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-    </form>
+    </div>
   </div>
