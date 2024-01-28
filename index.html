@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<title>Mike Turko | Graphic Designer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<link rel="stylesheet" href="css/w3pro.css"><!--check for updates or use link above-->
+<link rel="stylesheet" id="divi-style-css" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b3031d7976.js" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<link rel="icon" type="image/png" href="./images/2022/m3rd_fav.png" sizes="32x32">
+<link rel="icon" type="image/png" href="./images/2022/m3rd_fav.png" sizes="128x128">
+<link rel="icon" type="image/png" href="./images/2022/m3rd_fav.png" sizes="192x192">
+<link rel="apple-touch-icon" type="image/png" href="./images/2022/m3rd_fav.png" sizes="57x57">
+<meta name="msapplication-TileImage" type="image/png" content="./images/2022/m3rd_fav.png" sizes="32x32">
+
+<!-- Google recaptcha3 Miketurko.com -->
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LfKvZoUAAAAANA3h3l9fbdsEXNaKUilnkiOWNvk&#038;ver=3.0" id="google-recaptcha-js"></script>
+<!-- Google recaptcha2 form mturko.com-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VRNMTWJYX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4VRNMTWJYX');
+</script>
+
+<!-- End Google Tag Manager -->	
+
+<script>
+<!--Script to open and close sidebar-->
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- !W3 include HTML! -->
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<!-- !W3 include HTML End! -->
+
+<!-- Body -->
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+<!-- Nav -->
+  <div w3-include-html="sidebar.html"></div>
+  <script>w3.includeHTML();</script>
+<!-- Content  -->
+<div class="w3-main" style="margin-left:300px">
+<!-- <div class="w3-container w3-hide-medium w3-hide-small" style="width:100%; height:150px; background-color:#ddd;"></div> -->
+<!--<img src="/images/2022/headerimage.jpg" alt="graphic design" style="width:100%;margin-bottom:25px"> -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+<!-- Top Nav Mobile -->
+  <div w3-include-html="topnavmobile.html"></div>
+  <script>w3.includeHTML();</script>
+<!-- about -->
+  <div w3-include-html="about.html"></div>
+  <script>w3.includeHTML();</script>
+<!-- Portfolio -->
+  <!-- Header -->
+  <header id="portfolio" class="portfolio-tko"> 
+  <div class="w3-display-container w3-hide-small" style="margin-bottom:15px; background-color:#ffffff">
+<img class="" alt="graphic design" src="images/2022/headerimage1.jpg" style="width:100%;margin-bottom:0px">
+<div class="w3-display-bottomright w3-tiny w3-container w3-padding-5 w3-black" style="opacity:.8; border-radius: 10px 0 0 0px;">Puerto Morelos, Mexico </div>
+</div>
+
+<div class="w3-container" style="margin-bottom:16px">
+<h4 class="w3-bottombar"><i class="fa fa-th-large fa-fw w3-margin-right w3-hide-small w3-hide-medium"></i><b>Portfolio</b> (under construction)</h4>
+    <div class="w3-section  w3-padding-16" id="myBtnContainer" >
+      <button class="w3-button w3-black btn active" onclick="filterSelection('all')">ALL</button>
+      <button class="w3-button w3-white btn" onclick="filterSelection('print')"><i class="fas fa-book-dead w3-margin-right"></i>Print</button>
+      <button class="w3-button w3-white btn" onclick="filterSelection('video')"><i class="fas fa-photo-video w3-margin-right"></i>Video</button>
+      <button class="w3-button w3-white btn" onclick="filterSelection('digital')"><i class="fas fa-laptop-code w3-margin-right"></i>Digital</button>
+	  <button class="w3-button w3-white btn" onclick="filterSelection('other')"><i class="fas fa-file-image w3-margin-right"></i>Other</button>
+    </div>
+    </div>
+  </header>
+
+  <div class="w3-row-padding">
+    <!-- First Photo Grid Image 1-->
+    <div class="w3-third w3-container w3-margin-bottom filterDiv print">
+	   <img src="/images/2021/print_ciox.jpg" class="w3-hover-opacity" alt="Print" style="width:100%;cursor:zoom-in"
+  onclick="document.getElementById('modal01').style.display='block'">
+
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2021/print_ciox.jpg" style="width:100%">
+    </div>
+  </div>
+        <div class="w3-container w3-white">
+        <p><b>Guide</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+</div>	
+  <!-- First Photo Grid Image 2-->
+    <div class="w3-third w3-container w3-margin-bottom filterDiv print">
+      <img src="/images/2022/print_cavenders.jpg" alt="print" style="width:100%;cursor:zoom-in" class="w3-hover-opacity"
+  onclick="document.getElementById('modal02').style.display='block'">
+
+  <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/print_cavenders.jpg" style="width:100%">
+    </div>
+  </div>  
+      <div class="w3-container w3-white">
+        <p><b>Guide</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>	
+	
+  <!-- First Row Grid Image 3-->	
+    <div class="w3-third w3-container w3-margin-bottom filterDiv digital">
+<img src="/images/2022/2022_Lennar_Web-400x284.jpg" alt="web design" style="width:100%; cursor:zoom-in" class="w3-hover-opacity"
+onclick="document.getElementById('modal03').style.display='block'">
+
+	  <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/2022_Lennar_Web-400x284.jpg" style="width:100%">
+    </div>
+  </div>    
+      <div class="w3-container w3-white">
+        <p><b>Web Design &#38; Development</b></p>
+        <p><a href="https://lennarwellness.com/" target="_blank"><u>Click here</u></a> to view a website I designed, developed and update weekly.</p>
+      </div>
+    </div>
+  </div>
+  
+<!-- Second Row Grid Image 1-->
+  <div class="w3-row-padding">
+  
+    <div class="w3-third w3-container w3-margin-bottom filterDiv print">
+	   <img src="/images/2022/print_airgas.jpg" class="w3-hover-opacity alt="Print" style="width:100%;cursor:zoom-in"
+  onclick="document.getElementById('moda201').style.display='block'">
+
+  <div id="moda201" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/print_airgas.jpg" style="width:100%">
+    </div>
+  </div>
+        <div class="w3-container w3-white">
+        <p><b>Guide</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+</div>
+<!-- Second Row Grid Image 2-->	
+    <div class="w3-third w3-container w3-margin-bottom filterDiv print">
+      <img src="/images/2022/mexico.jpg" alt="Print" style="width:100%;cursor:zoom-in" class="w3-hover-opacity"
+	    onclick="document.getElementById('moda202').style.display='block'">
+		
+	  <div id="moda202" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/mexico.jpg" style="width:100%; height:auto; vertical-align:bottom; display: block">
+	  	  	  <div class="w3-display-bottomright w3-tiny w3-container w3-padding-5 w3-black" style="opacity:.8; border-radius: 10px 0 0 0px;margin:0px">Great Maya Reef, Puerto Morelos, Mexico </div>
+    </div>
+  </div>			
+      <div class="w3-container w3-white">
+        <p><b>FPO</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+	
+	<!-- Second Row Grid Image 3-->
+    <div class="w3-third w3-container w3-margin-bottom filterDiv print">
+      <img src="/images/2022/bonaire.jpg" alt="Print" style="width:100%;cursor:zoom-in" class="w3-hover-opacity"
+	    onclick="document.getElementById('moda203').style.display='block'">
+			  <div id="moda203" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/bonaire.jpg" style="width:100%; height:auto; vertical-align:bottom; display: block">
+	    <div class="w3-display-bottomright w3-tiny w3-container w3-padding-5 w3-black" style="opacity:.8; border-radius: 10px 0 0 0px;margin:0px">Bonaire </div>
+    </div>
+  </div>	
+      <div class="w3-container w3-white">
+        <p><b>FPO</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Third Photo Grid Image 1-->
+	  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom filterDiv print digital">
+	   <img src="/images/2022/campaign_ciox.jpg" class="w3-hover-opacity" alt="Print" style="width:100%;cursor:zoom-in"
+  onclick="document.getElementById('moda301').style.display='block'">
+
+  <div id="moda301" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/campaign_ciox.jpg" style="width:100%">
+    </div>
+  </div>
+        <div class="w3-container w3-white">
+        <p><b>Campaign</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+</div>	
+  <!-- Third  Photo Grid Image 2-->
+    <div class="w3-third w3-container w3-margin-bottom filterDiv video">
+      <img src="/images/2022/photogallery_pps.jpg" alt="print" style="width:100%;cursor:zoom-in" class="w3-hover-opacity"
+  onclick="document.getElementById('moda302').style.display='block'">
+
+  <div id="moda302" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/photogallery_pps.jpg" style="width:100%">
+    </div>
+  </div>  
+      <div class="w3-container w3-white">
+        <p><b>Animated Power Point</b></p>
+       <p style="margin:0px"><a href="https://youtu.be/Bq_jr4biqRE" target="blank"><u>Click here</u></a> to view animated power point #1.</p>
+	     <p style="margin:0px 0px 20px 0px"><a href="https://youtu.be/HaI47HQ2bHw" target="blank"><u>Click here</u></a> to view animated power point #2.</p>
+      </div>
+    </div>	
+	
+    <!-- Third  Row Grid Image 3-->	
+<div class="w3-third w3-container w3-margin-bottom filterDiv digital">
+<img src="/images/2022/bd.jpg" alt="web design" style="width:100%; cursor:zoom-in" class="w3-hover-opacity"
+onclick="document.getElementById('moda303').style.display='block'">
+
+	  <div id="moda303" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/bd.jpg" style="width:100%; height:auto; vertical-align:bottom; display: block">
+	  	  <div class="w3-display-bottomright w3-tiny w3-container w3-padding-5 w3-black" style="opacity:.8; border-radius: 10px 0 0 0px;margin:0px">Fort St. Catherine, St Georges, Bermuda </div>
+    </div>
+  </div>    
+      <div class="w3-container w3-white">
+        <p><b>FPO</b></p>
+       <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+	  
+    </div>
+  </div>
+ 
+<!--  First Row Quarters Image 1-->
+  <div class="w3-row-padding">
+    <div class="w3-quarter w3-container w3-margin-bottom filterDiv video">
+       <a href="https://mturko.wistia.com/medias/ob9r31xzj2" target="-blank"><img src="/images/2022/video_tmna.jpg" alt="video animation" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Video/Animation</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+	<!--  First Row Quarters Image 2-->
+    <div class="w3-quarter w3-container w3-margin-bottom filterDiv video">
+      	   <a href="https://mturko.wistia.com/medias/4fkkxwcsdp" target="-blank"><img src="/images/2022/video_ppintro.jpg" alt="video animation" style="width:100%" class="w3-hover-opacity"></a>
+ <div class="w3-container w3-white">
+        <p><b>Video/Animation</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+	<!--  First Row Quarters Image 3-->
+    <div class="w3-quarter w3-container  w3-margin-bottom filterDiv video">
+      	   <a href="https://mturko.wistia.com/medias/gckkmyzq06" target="-blank"><img src="/images/2022/video_lennar.jpg" alt="Video Animation" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Video/Animation</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+	
+		<!--  First Row Quarters Image 4-->
+    <div class="w3-quarter w3-container  w3-margin-bottom filterDiv video">
+      	   <a href="https://mturko.wistia.com/medias/g063e3ujgz" target="-blank"><img src="/images/2022/video_bbasicsjpg.jpg" alt="video animation" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Video/Animation</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>		
+  </div>
+		<!--  Second Row Quarters Image 1-->
+  <div class="w3-row-padding">
+    <div class="w3-quarter w3-container w3-margin-bottom filterDiv video">
+       <a href="https://mturko.wistia.com/medias/zyp7j5e26x" target="-blank"><img src="/images/2022/video_airgas.jpg" alt="video animation" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Video/Animation</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+			<!--   Second Row Quarters Image 2-->
+    <div class="w3-quarter w3-container w3-margin-bottom filterDiv digital">
+      <img src="/images/2022/email_lennar.jpg" alt="outlook email" style="width:100%; cursor:zoom-in" class="w3-hover-opacity"
+  onclick="document.getElementById('moda502').style.display='block'">
+
+  <div id="moda502" class="w3-modal" onclick="this.style.display='none'">
+   <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/email_lennar.jpg" style="width:100%">
+    </div>
+  </div>  
+      <div class="w3-container w3-white">
+        <p><b>Microsoft Outlook Email</b></p>
+       <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+<!--  Second Row Quarters Image 3-->
+	    <div class="w3-quarter w3-container w3-margin-bottom filterDiv digital">
+      <img src="/images/2022/squid.jpg" alt="fpo" style="width:100%; cursor:zoom-in" class="w3-hover-opacity"
+  onclick="document.getElementById('moda503').style.display='block'">
+
+  <div id="moda503" class="w3-modal" onclick="this.style.display='none'">
+   <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="/images/2022/squid.jpg" style="width:100%; height:auto; vertical-align:bottom; display: block">
+	    	  <div class="w3-display-bottomright w3-tiny w3-container w3-padding-5 w3-black" style="opacity:.8; border-radius: 10px 0 0 0px;margin:0px">Glass Beach, St. Georges, Bermuda </div>
+    </div>
+  </div>  
+      <div class="w3-container w3-white">
+        <p><b>FPO</b></p>
+       <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+			<!--  Second Row Quarters Image 4-->
+    <div class="w3-quarter w3-container  w3-margin-bottom filterDiv other">
+      <img src="/images/2022/fpo_third.jpg" alt="video animation" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>		
+  </div>
+
+  <!-- Portfolio Script-->
+    <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<!-- END Portfolio -->
+<!-- Contact -->
+  <div w3-include-html="contact.html"></div>
+  <script>w3.includeHTML();</script>
+
+<!-- End Content Div -->
+</div>
+<!-- End Content Div -->
+
+<!-- Footer -->
+  <div w3-include-html="footer.html"></div>
+  <script>w3.includeHTML();</script>
+ 
+</body>
+</html>
