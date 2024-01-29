@@ -3244,10 +3244,11 @@ img.u-pull-left {
  * ## intro bg
  * -------------------------------------------------------------------- */
 .s-intro__bg {
-    aspect-ratio        : 1/1;
+    aspect-ratio        : 16/9;
+	/*    aspect-ratio        : 1/1;*/
     width               : 100%;
     background-color    : var(--color-gray-4);
-    background-image    : url(../images/intro-bg.jpg);
+    background-image    : url(../images/YDXJ0073.webp);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
