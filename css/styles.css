@@ -3622,6 +3622,14 @@ img.u-pull-left {
     .s-about__skills .skill-bars li::before {
         display : none;
     }
+	
+	/*TKO SKILLS VERTICLE */
+	.s-about__timeline-section .skill-bars li::before {
+    display : none;
+    }
+		
+	.s-about__timeline-section .skill-bars {
+    --bar-padding: var(--timeline-left-padding);}
 }
 
 
