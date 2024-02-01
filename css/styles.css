@@ -3220,7 +3220,8 @@ img.u-pull-left {
     font-family    : var(--font-1);
     font-size      : var(--text-xxxl);
     font-weight    : 400;
-    line-height    : 1.0998;
+    /*line-height    : 1.0998; original setting*/
+	line-height    : 0;
     letter-spacing : -.01em;
     margin-top     : 0;
     color          : white;
