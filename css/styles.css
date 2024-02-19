@@ -3974,6 +3974,7 @@ img.u-pull-left {
     .folio-item__meta {
         font-size : var(--text-sm);
     }
+	
 }
 
 @media screen and (max-width: 400px) {
@@ -4167,3 +4168,8 @@ img.u-pull-left {
         width  : 1.6rem;
     }
 }
+
+/* ------------------------------------------------------------------- 
+ * ## Mike Turko Misc
+ * ------------------------------------------------------------------- */
+ 
