@@ -160,18 +160,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     Portfolio
                     </p>
                 </div>
+				
+				
+				
+				
             </div>
 			
 			
 		<!-- # Portfolio
         ================================================== -->
+		
+<div id="myBtnContainer" style="text-align:center" class="animate-on-load">
+  <button class="btn_tko active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn_tko" onclick="filterSelection('digital')"> Digital</button>
+  <button class="btn_tko" onclick="filterSelection('print')"> Print</button>
+  <button class="btn_tko" onclick="filterSelection('video')"> Video</button>
+  <button class="btn_tko" onclick="filterSelection('powerpoint')"> PowerPoint</button>
+</div>
+		
+		
 
             <div class="row folio-list block-lg-one-fourth block-stack-on-550" data-animate-block>
 
 
-      <!-- # Row 1
+      <!-- # Image 1
         ================================================== -->
-                <div class="column animate-on-load">
+                <div class="column animate-on-load filterDiv digital">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-midjouney1-2500x1666.webp" Title="Production Artist" data-size="1050x700">
@@ -193,7 +207,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-				         <div class="column animate-on-load">
+	    <!-- # Image 2
+        ================================================== -->			
+				<div class="column animate-on-load filterDiv digital">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-midjouney2-2500x1666.webp" Title="Production Artist" data-size="1050x700">
@@ -215,9 +231,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
+		<!-- # Image 3
+        ================================================== -->			
 				
-				
-				<div class="column animate-on-load">
+				<div class="column animate-on-load filterDiv digital print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-works-1-2500x1666.webp" Title="Benefits Guide" data-size="1050x700">
@@ -237,8 +254,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div> <!-- end column -->
-				
-                 <div class="column animate-on-load">
+		
+		<!-- # Image 4
+        ================================================== -->			
+                 <div class="column animate-on-load filterDiv digital powerpoint">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-ci-pp-2500x1666.webp" title="PowerPoint" data-size="1050x700">
@@ -258,7 +277,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div> <!-- end column -->
-                <div class="column animate-on-load">
+				
+		<!-- # Image 5
+        ================================================== -->			
+                <div class="column animate-on-load filterDiv print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-works-anderson-2500x1666.webp" title="Benefits Guide" data-size="1050x700">
@@ -278,8 +300,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div> <!-- end column -->
-				
-                <div class="column animate-on-load">
+		
+		<!-- # Image 6
+        ================================================== -->	
+                <div class="column animate-on-load filterDiv print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-works-cavenders-2500x1666.webp" title="Benefits Guide" data-size="1050x700">
@@ -300,10 +324,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-		<!-- # Row 2
+		<!-- # Image 7
         ================================================== -->
 			
-			<div class="column" data-animate-el>
+			<div class="column animate-on-load  filterDiv print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-afc-2500x1666.webp" title="Info Graphic" data-size="1050x700">
@@ -324,7 +348,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-                <div class="column" data-animate-el>
+        <!-- # Image 8
+        ================================================== -->	
+        <div class="column animate-on-load filterDiv digital">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-lennar-web-2500x1666.webp" title="Website" data-size="1050x700">
@@ -345,7 +371,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-                <div class="column" data-animate-el>
+		<!-- # Image 9
+        ================================================== -->	
+
+                <div class="column filterDiv digital">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-superior-2500x1666.webp" title="Flipbook" data-size="1050x700">
@@ -365,8 +394,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div> <!-- end column -->
-				
-				<div class="column" data-animate-el>
+		
+		<!-- # Image 10
+        ================================================== -->	
+		
+				<div class="column filterDiv digital print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-rhealthemail-2500x1666.webp" title="Email Postcard Guide" data-size="1050x700">
@@ -388,9 +420,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div> <!-- end column -->
 				
 				
-		<!-- # Row 3
+		<!-- # Image 11
         ================================================== -->	
-				<div class="column" data-animate-el>
+				<div class="column filterDiv digital video">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-lennar-af-2500x1666.webp" title="After Effects" data-size="1050x700">
@@ -411,7 +443,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-                <div class="column" data-animate-el>
+        <!-- # Image 12
+        ================================================== -->        
+				
+				<div class="column filterDiv print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-rhealthposter-2500x1666.webp" title="Poster" data-size="1050x700">
@@ -432,7 +467,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-				<div class="column" data-animate-el>
+				
+		<!-- # Image 13
+        ================================================== -->		
+				<div class="column filterDiv digital print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-works-cone-2500x1666.webp" title="PowerPoint" data-size="1050x700">
@@ -453,7 +491,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-				<div class="column" data-animate-el>
+		<!-- # Image 14
+        ================================================== -->		
+				
+				<div class="column filterDiv digital powerpoint">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-quanta-pp-2500x1666.webp" title="PowerPoint" data-size="1050x700">
@@ -473,15 +514,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div> <!-- end column -->
-				
-				
-				 
-									
-				
-		<!-- # Row 4
+						
+		<!-- # Image 15
         ================================================== -->
-				<!-- Row 4 sample 1 -->
-				<div class="column" data-animate-el>
+			
+				<div class="column filterDiv digital powerpoint">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-conehealth-pp-2500x1666.webp" title="PowerPoint" data-size="1050x700">
@@ -502,8 +539,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-				<!-- Row 4 sample 2 -->
-				<div class="column" data-animate-el>
+		<!-- # Image 16
+        ================================================== -->
+				<div class="column filterDiv print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-daiwa-2500x1666.webp" title="Guide Cover" data-size="1050x700">
@@ -524,8 +562,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-				<!-- Row 4 sample 3 -->
-				<div class="column" data-animate-el>
+		<!-- # Image 17
+        ================================================== -->
+				<div class="column filterDiv print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-airgas-poster-2500x1666.webp" title="Poster" data-size="1050x700">
@@ -547,8 +586,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div> <!-- end column -->
 				
 				
-				<!-- Row 4 sample 4 -->
-				<div class="column" data-animate-el>
+		<!-- # Image 18
+        ================================================== -->
+				<div class="column filterDiv print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-airgas-2500x1666.webp" title="Poster" data-size="1050x700">
@@ -569,13 +609,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 
-		<!-- # End Row 4
-        ================================================== -->
-	<!-- #Row 5
+
+	<!-- # Image 19
         ================================================== -->
 
-			<!-- Row 5 sample 1 -->
-				<div class="column" data-animate-el>
+				<div class="column filterDiv print">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-marketing-2500x1666.webp" title="Poster" data-size="1050x700">
@@ -596,8 +634,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-				<!-- Row 5 sample 2 -->
-				<div class="column" data-animate-el>
+		<!-- # Image 20
+        ================================================== -->
+				<div class="column filterDiv digital video">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-subway-2500x1666.webp" title="Video" data-size="1050x700">
@@ -618,7 +657,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-					<div class="column" data-animate-el>
+		<!-- # Image 21
+        ================================================== -->		
+				
+				<div class="column filterDiv video digital">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-tmna-af-2500x1666.webp" title="After Effects Video" data-size="1050x700">
@@ -639,7 +681,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div> <!-- end column -->
 				
-				<div class="column" data-animate-el>
+			
+		<!-- # Image 22
+        ================================================== -->	
+			<div class="column filterDiv digital video">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-tmna2-af-2500x1666.webp" title="After Effects Video" data-size="1050x700">
@@ -661,9 +706,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div> <!-- end column -->
 				
 				
-
+		<!-- # Image 23
+        ================================================== -->
 		
-			<div class="column" data-animate-el>
+			<div class="column filterDiv fruits">
 			<div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/g-tropical.jpg" title="Tropical" data-size="1050x700">
@@ -805,10 +851,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div> <!-- end photoSwipe background -->
 
+
     <!-- Java Script
     ================================================== -->
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn_tko");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
 
 
 </body>

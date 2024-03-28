@@ -4173,3 +4173,37 @@ img.u-pull-left {
  * ## Mike Turko Misc
  * ------------------------------------------------------------------- */
  
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn_tko {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  line-height: calc(var(--btn-height) - 20px);
+}
+
+/* Add a light grey background on mouse-over */
+.btn_tko:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn_tko.active {
+  background-color: #666;
+  color: white;
+}
