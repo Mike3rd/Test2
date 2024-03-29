@@ -3297,6 +3297,7 @@ img.u-pull-left {
     .s-intro {
         padding-top : calc(7 * var(--space));
     }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -3307,6 +3308,8 @@ img.u-pull-left {
     .s-intro__text-huge {
         margin-bottom : var(--vspace-1);
     }
+	
+	
 }
 
 @media screen and (max-width: 800px) {
@@ -3317,12 +3320,22 @@ img.u-pull-left {
     .s-intro__text-huge {
         margin-bottom : var(--vspace-0_5);
     }
+
+
 }
 
 @media screen and (max-width: 600px) {
     .s-intro__text h3 {
-        font-size : 2.6vw;
+        font-size : 3.3vw;
     }
+	
+	    .s-intro .row {
+        padding: 0px;
+    }
+	
+
+
+
 }
 
 
