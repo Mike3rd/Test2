@@ -4215,6 +4215,7 @@ img.u-pull-left {
   outline: none;
   padding: 12px 16px;
   background-color: purple;
+  color:#ffffff;
   cursor: pointer;
   line-height: calc(var(--btn-height) - 20px);
 }
