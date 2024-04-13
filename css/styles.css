@@ -4233,3 +4233,5 @@ font-weight:800;
 color: var(--color-gray-7); 
 font-weight:800;
 }
+
+.pswp__caption a {font-weight:800;font-size: var(--text-sm)}
