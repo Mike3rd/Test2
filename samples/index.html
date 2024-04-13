@@ -54,7 +54,7 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/vendor_sample.css">
     <link rel="stylesheet" href="../css/styles.css">
 
     <!-- favicons
@@ -153,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <section id="works" class="s-works">
 
             <div class="row"  >
-                <div class="column lg-12 animate-on-load" style="text-align:center" >
+                <div class="column lg-12 <!--animate-on-load-->" style="text-align:center" >
                     <h2 class="text-pretitle">Graphic Design + Digital Design + Production Artist</h2>
 
                     <p class="text-huge-title">
@@ -170,9 +170,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- # Portfolio
         ================================================== -->
 		
-<div id="myBtnContainer" style="text-align:center" class="animate-on-load">
-  <button class="btn_tko active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn_tko" onclick="filterSelection('select')" style="background:purple;color:white;hover:gray"> Select Projects</button>
+<div id="myBtnContainer" style="text-align:center" class="<!--animate-on-load-->">
+  <button class="btn_tko " onclick="filterSelection('all')"> Show all</button>
+  <button class="btn_tko active" onclick="filterSelection('select')"> Select Projects</button>
   <button class="btn_tko" onclick="filterSelection('digital')"> Digital</button>
   <button class="btn_tko" onclick="filterSelection('print')"> Print</button>
   <button class="btn_tko" onclick="filterSelection('video')"> Video</button>
@@ -770,7 +770,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<!-- # Image 26
         ================================================== -->
 		
-			<div class="column filterDiv digital select">
+			<div class="column filterDiv  digital select">
                     <div class="folio-item">
                         <div class="folio-item__thumb">
                             <a class="folio-item__thumb-link" href="portfolio/gallery/sample-marshland-2500x1666.webp" Title="Landing Page" data-size="1050x700">
@@ -954,7 +954,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <script>
-filterSelection("all")
+filterSelection("select")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
