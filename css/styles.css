@@ -4222,3 +4222,14 @@ img.u-pull-left {
   background-color: #666;
   color: white;
 }
+
+/*My Role Number stle*/
+.role_num{
+color: #aa95c0;
+font-weight:800;
+}
+
+.caption_hilite{
+color: var(--color-gray-7); 
+font-weight:800;
+}
