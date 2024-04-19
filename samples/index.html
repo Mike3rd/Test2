@@ -154,7 +154,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <section id="works" class="s-works">
 
             <div class="row"  >
-                <div class="column lg-12 <!--animate-on-load-->" style="text-align:center" >
+                <div class="column lg-12 animate-on-load " style="text-align:center" >
                     <h2 class="text-pretitle">Graphic Design + Digital Design + Production Artist</h2>
 
                     <p class="text-huge-title">
@@ -171,9 +171,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- # Portfolio
         ================================================== -->
 		
-<div id="myBtnContainer" style="text-align:center" class="<!--animate-on-load-->">
-  <button class="btn_tko " onclick="filterSelection('all')"> Show all</button>
-  <button class="btn_tko active" onclick="filterSelection('select')"> Select Projects</button>
+<div id="myBtnContainer" style="text-align:center" class="animate-on-load">
+  <button class="btn_tko active " onclick="filterSelection('all')"> Show all</button>
+  <!--<button class="btn_tko active" onclick="filterSelection('select')"> Select Projects</button>-->
   <button class="btn_tko" onclick="filterSelection('digital')"> Digital</button>
   <button class="btn_tko" onclick="filterSelection('print')"> Print</button>
   <button class="btn_tko" onclick="filterSelection('video')"> Video</button>
@@ -960,7 +960,7 @@ Utilize custom HTML and CSS coding to achieve the desired outcomes.</p>
 
 
 <script>
-filterSelection("select")
+filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
